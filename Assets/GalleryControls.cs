@@ -5,20 +5,21 @@ public class GalleryControls : MonoBehaviour {
 
 	private GameObject[] objects;
 	private GameObject cObj;
+	public GameObject main;
 
     private Ray ray;
 	private RaycastHit[] hits;
 
-	private CardboardHead head;
+	//private CardboardHead head;
 
-	private float time = 0, speed = 10;
+	private float time = 0, speed = 1;
 
 	private bool timing = false, moving = false;
 
 	// Use this for initialization
 	void Start () {
         objects = GameObject.FindGameObjectsWithTag("target");
-		head = this.GetComponent<CardboardHead> ();
+	//	head = this.GetComponent<CardboardHead> ();
 	}
 	
 	// Update is called once per frame
@@ -41,7 +42,7 @@ public class GalleryControls : MonoBehaviour {
 				cObj = hit.collider.gameObject;
             }
 
-            Behaviour bt = (Behaviour)hit.collider.GetComponent("Halo");
+            Behaviour bt = (Behaviour)cObj.GetComponent("Halo");
             bt.enabled = state;
         }
 
@@ -59,12 +60,17 @@ public class GalleryControls : MonoBehaviour {
 			Debug.Log ("Moving");
 			float step = speed * Time.deltaTime;
 
+			Debug.Log (main.transform.position);
+			Debug.Log (cObj.transform.position);
+
 			//head.target = cObj.transform;
-			Vector3 temp = Vector3.MoveTowards(this.transform.position, cObj.transform.position, step);
+			Vector3 temp = Vector3.MoveTowards(main.transform.position, cObj.transform.position, step);
 			Debug.Log (temp);
 
-			if (Vector3.Distance (this.transform.position, cObj.transform.position) < 2)
-				head.target = null;
+			main.transform.position = temp;
+
+			if (Vector3.Distance (main.transform.position, cObj.transform.position) < 2)
+			//head.target = null;
 				moving = false;
 		}
 	}
@@ -77,5 +83,9 @@ public class GalleryControls : MonoBehaviour {
 		Debug.Log ("Timer Stopped");
 		timing = false;
 		time = 0;
+	}
+	public void stopMovement(){
+		moving = false;
+		stopTimer ();
 	}
 }
