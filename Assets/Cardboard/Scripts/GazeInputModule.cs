@@ -157,7 +157,7 @@ public class GazeInputModule : BaseInputModule {
     Camera cam = pointerData.enterEventCamera;  // Will be null for overlay hits.
     //cursor.SetActive(go != null && cam != null && showCursor);
 	cursor.SetActive (showCursor);
-    if (cursor.activeInHierarchy) {
+		if (cursor.activeInHierarchy && go != null) {
       // Note: rays through screen start at near clipping plane.
       float dist = pointerData.pointerCurrentRaycast.distance + cam.nearClipPlane;
       cursor.transform.position = cam.transform.position + cam.transform.forward * dist;

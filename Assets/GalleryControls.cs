@@ -6,6 +6,7 @@ public class GalleryControls : MonoBehaviour {
 	private GameObject[] objects;
 	private GameObject cObj;
 	public GameObject main;
+	public Animator cursorAnim;
 
     private Ray ray;
 	private RaycastHit[] hits;
@@ -48,7 +49,6 @@ public class GalleryControls : MonoBehaviour {
 
 		if (timing) {
 			time += Time.deltaTime;
-			Debug.Log ("Current Time: " + time);
 		}
 
 		if (time > 2.0f) {
@@ -63,24 +63,25 @@ public class GalleryControls : MonoBehaviour {
 			Debug.Log (main.transform.position);
 			Debug.Log (cObj.transform.position);
 
-			//head.target = cObj.transform;
 			Vector3 temp = Vector3.MoveTowards(main.transform.position, cObj.transform.position, step);
-			Debug.Log (temp);
 
 			main.transform.position = temp;
 
 			if (Vector3.Distance (main.transform.position, cObj.transform.position) < 2)
-			//head.target = null;
 				moving = false;
 		}
 	}
 
 	public void startTimer () {
 		Debug.Log ("Timer Started");
+		//Start Animation
+		cursorAnim.StartPlayback();
 		timing = true;
 	}
 	public void stopTimer() {
 		Debug.Log ("Timer Stopped");
+		//Reset Animation
+		cursorAnim.StopPlayback();
 		timing = false;
 		time = 0;
 	}
