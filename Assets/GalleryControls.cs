@@ -39,12 +39,13 @@ public class GalleryControls : MonoBehaviour {
             bool state = false;
             if (hit.collider.tag == "target")
             {
+				Debug.Log ("Hit Target");
                 state = true;
 				cObj = hit.collider.gameObject;
-            }
 
-            Behaviour bt = (Behaviour)cObj.GetComponent("Halo");
-            bt.enabled = state;
+				Behaviour bt = (Behaviour)cObj.GetComponent("Halo");
+				bt.enabled = state;
+            }
         }
 
 		if (timing) {
@@ -75,13 +76,13 @@ public class GalleryControls : MonoBehaviour {
 	public void startTimer () {
 		Debug.Log ("Timer Started");
 		//Start Animation
-		cursorAnim.StartPlayback();
+		//cursorAnim.StartPlayback();
 		timing = true;
 	}
 	public void stopTimer() {
 		Debug.Log ("Timer Stopped");
 		//Reset Animation
-		cursorAnim.StopPlayback();
+		//cursorAnim.StopPlayback();
 		timing = false;
 		time = 0;
 	}
