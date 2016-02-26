@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1eda3224e8946aaab6e2448f2dad26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelsHolder: {fileID: 0}
 --- !u!4 &749240049
 Transform:
   m_ObjectHideFlags: 0
@@ -283,7 +284,7 @@ GameObject:
   - 65: {fileID: 915671144}
   - 23: {fileID: 915671143}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Gallery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -296,7 +297,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 915671141}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.6, z: 0.01}
   m_Children: []
   m_Father: {fileID: 1691296916}
@@ -358,7 +359,7 @@ GameObject:
   - 65: {fileID: 1575126465}
   - 23: {fileID: 1575126464}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Simple_Gallery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -371,7 +372,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1575126462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 0.4, y: 0.6, z: 0.01}
   m_Children: []
   m_Father: {fileID: 1691296916}
@@ -442,8 +443,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1691296915}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.01379965, z: 0, w: 0.9999048}
+  m_LocalPosition: {x: -0.010954171, y: 0, z: 0.01126194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1575126463}
