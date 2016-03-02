@@ -520,9 +520,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -1042,6 +1042,7 @@ Transform:
   - {fileID: 1347252700}
   - {fileID: 1600852851}
   - {fileID: 478938783}
+  - {fileID: 1227066700}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!4 &315967005 stripped
@@ -1162,9 +1163,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -1635,9 +1636,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -2169,9 +2170,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -2557,6 +2558,18 @@ Prefab:
       propertyPath: deviceType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: backButtonMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: enableSettingsButton
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: distortionCorrection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
   m_IsPrefabParent: 0
@@ -2864,9 +2877,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -3242,14 +3255,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1227066699}
   m_LocalRotation: {x: 0, y: 0, z: -0.87751454, w: 0.4795501}
-  m_LocalPosition: {x: -1.5881861, y: 1.700029, z: 0.061}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: -1.9768903, y: 0.6299845, z: -2.113054}
+  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.2}
   m_Children:
   - {fileID: 1325042924}
   - {fileID: 282983393}
   - {fileID: 1899258803}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 283807228}
+  m_RootOrder: 11
 --- !u!1 &1277241799
 GameObject:
   m_ObjectHideFlags: 0
@@ -3381,9 +3394,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -3430,9 +3443,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -3916,9 +3929,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -4052,9 +4065,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -4113,9 +4126,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -4526,9 +4539,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vrModeOnly: 0
-  cursor: {fileID: 1988511108}
-  showCursor: 1
-  scaleCursorSize: 1
   clickTime: 0.1
   hotspot: {x: 0.5, y: 0.5}
 --- !u!114 &1885808949
@@ -5242,9 +5252,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -5591,9 +5601,9 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 43.89986
+  m_Intensity: 8
+  m_Range: 3
+  m_SpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
