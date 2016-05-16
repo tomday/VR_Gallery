@@ -38,7 +38,6 @@ public class GalleryControls : MonoBehaviour {
 		foreach (RaycastHit hit in hits){
             if (hit.collider.tag == "target")
             {
-				Debug.Log ("Hit Target");
 				cObj = hit.collider.gameObject;
 
 				Behaviour bt = (Behaviour)cObj.GetComponent("Halo");
@@ -59,9 +58,6 @@ public class GalleryControls : MonoBehaviour {
 			Debug.Log ("Moving");
 			float step = speed * Time.deltaTime;
 
-			//Debug.Log (main.transform.position);
-			//Debug.Log (cObj.transform.position);
-
 			Vector3 temp = Vector3.MoveTowards(main.transform.position, cObj.transform.position, step);
 
 			main.transform.position = temp;
@@ -72,15 +68,11 @@ public class GalleryControls : MonoBehaviour {
 	}
 
 	public void startTimer () {
-		//Debug.Log ("Timer Started");
-
 		CursorAnim.Play ("Circle");
 
 		timing = true;
 	}
 	public void stopTimer() {
-		//Debug.Log ("Timer Stopped");
-
 		CursorAnim.Play ("Default");
 
 		timing = false;
